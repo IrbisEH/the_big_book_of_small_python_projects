@@ -11,8 +11,8 @@ except ImportError:
 WIDTH, HEIGHT = bext.size()
 WIDTH -= 1
 
-NUMBER_OF_LOGOS = 130
-PAUSE_AMOUNT = 0.01
+NUMBER_OF_LOGOS = 60
+PAUSE_AMOUNT = 0.015
 COLORS = ['red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white']
 
 UP_RIGHT = 'ur'
