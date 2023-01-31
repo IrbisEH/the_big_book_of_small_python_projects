@@ -23,7 +23,7 @@ def main():
     while True:
         print('Enter the number of clickbait headlines to generate:')
         response = input('> ')
-        if not response.isdecimal:
+        if not response.isdecimal():
             print('Please enter a number.')
         else:
             numberOfHeadlines = int(response)
@@ -39,17 +39,17 @@ def main():
         elif clickbaitType == 3:
             headline = generateBigCompaniesHateHerHeadline()
         elif clickbaitType == 4:
-            headline = generateYouWontBelieceHeadline()
+            headline = generateYouWontBelieveHeadline()
         elif clickbaitType == 5:
             headline = generateDontWantYouToKnowHeadline()
         elif clickbaitType == 6:
-            headline = generateGeftIdeaHedline()
+            headline = generateGiftIdeaHeadline()
         elif clickbaitType == 7:
             headline = generateReasonsWhyHeadline()
         elif clickbaitType == 8:
             headline = generateJobAutomatedHeadline()
 
-        print(headline)
+        print(f'{i + 1} ->', headline)
 
     website = random.choice(
         ['wobsite', 'blag', 'Facebuuk', 'Googles','Facesbook', 'Tweedie', 'Pastagram']
