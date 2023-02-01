@@ -4,12 +4,12 @@ import sys
 import time
 
 
-print('Input a starting number (greater then 0) or QUIT')
+print('Input a starting positive number (greater then 0) or QUIT')
 
 response = input('> ')
 
-if not response.isdecimal() or response == 0:
-    print('You must input integer!')
+if not response.isdecimal() or response == '0':
+    print('You must input positive integer (greater then 0)!')
     sys.exit()
 
 n = int(response)
